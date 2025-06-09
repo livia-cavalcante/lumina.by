@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina Estética - Beleza e Bem-Estar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="fixed w-full z-50 bg-white shadow-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <h1 class="title-font text-2xl font-bold text-gray-800">Lumina <span class="text-purple-600">Estética</span></h1>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-purple-600">Home</a>
+                    <a href="#services" class="nav-link text-gray-700 hover:text-purple-600">Serviços</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-purple-600">Sobre</a>
+                    <a href="#testimonials" class="nav-link text-gray-700 hover:text-purple-600">Depoimentos</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-purple-600">Contato</a>
+                </nav>
+                
+                <div class="flex items-center space-x-4">
+                    <a href="#booking" class="hidden md:block bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-full transition duration-300">Agendar</a>
+                    <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="#home" class="block py-2 text-gray-700 hover:text-purple-600">Home</a>
+                <a href="#services" class="block py-2 text-gray-700 hover:text-purple-600">Serviços</a>
+                <a href="#about" class="block py-2 text-gray-700 hover:text-purple-600">Sobre</a>
+                <a href="#testimonials" class="block py-2 text-gray-700 hover:text-purple-600">Depoimentos</a>
+                <a href="#contact" class="block py-2 text-gray-700 hover:text-purple-600">Contato</a>
+                <a href="#booking" class="block mt-2 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-full text-center transition duration-300">Agendar</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero min-h-screen flex items-center justify-center text-white pt-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="title-font text-4xl md:text-6xl font-bold mb-6">Descubra Seu  <span class="text-purple-600">Brilho</span> Interior</h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-2xl mx-auto">Na Lumina Estética, combinamos técnicas avançadas com cuidados naturais para realçar sua beleza única.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#services" class="bg-purple-600  hover:bg-purple-700
+ text-white px-8 py-4 rounded-full text-lg font-medium transition duration-300">Nossos Serviços </a>
+            
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="title-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nossos <span class="text-purple-600">Serviços</span></h2>
+                <p class="max-w-2xl mx-auto text-gray-600">Oferecemos tratamentos personalizados para cuidar da sua pele, corpo e bem-estar.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://www.onodera.com.br/media/cache/1/ece9a24a761836a70934a998c163f8c8/shutterstock_794935522.jpg');"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            
+                            <h3 class="title-font text-xl font-bold text-gray-800">Tratamentos faciais</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Limpeza de pele, peeling de diamante, protocolo para manchas, protocolo para oleosidade, protocolo para olheiras e preenchimento labial.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-purple-600 font-bold">A partir de R$ 100,99</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://www.vanessacarvalhobeauty.com.br/upload/service/EMFdJUPBqNnQUq7IU87GYR7Rz9OZuaOPcxDpsoZt.jpeg');"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            
+                            <h3 class="title-font text-xl font-bold text-gray-800">Tratamentos corporais</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Protocolo para flacidez, protocolo pra celulite, protocolo para estrias, protocolo para microvasos, massagem modeladora e drenagem lifática.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-purple-600 font-bold">A partir de R$ 150,00</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://clinicalidiagusmao.com.br/wp-content/uploads/2018/07/Depila%C3%A7%C3%A3o-a-Laser-2-1170x658.jpg');"></div>
+                    <div class="p-6">
+
+                        <div class="flex items-center mb-4">
+                        <h3 class="title-font text-xl font-bold text-gray-800">Depilação a laser</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Axilas, virilha, buço, perna, rosto, costas e peito.</p>
+                        <br></br>
+                        
+                        
+
+                        <div class="flex justify-between items-center">
+                            <span class="text-purple-600 font-bold">A partir de R$ 40,00</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://img.freepik.com/fotos-gratis/jovem-mulher-com-massagem-de-rosto-relaxante-no-salao-spa_176420-7546.jpg?semt=ais_hybrid&w=740');"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                           
+                            <h3 class="title-font text-xl font-bold text-gray-800">Spa</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Massagem relaxante, massagem terapeutica, massagem com pedras e day spa.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-purple-600 font-bold">A partir de R$ 120,00</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('data:image/jpeg;base64,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');"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                          
+                            <h3 class="title-font text-xl font-bold text-gray-800">Manicure & edicure</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Cuidados profissionais para mãos e pés, incluindo esmaltação em gel e tratamentos especiais.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-purple-600 font-bold">A partir de R$ 30,00</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://th.bing.com/th/id/OIP.z1b-xkM7Dv-WUV0eX1wznQHaEj?w=296&h=182&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3');"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <h3 class="title-font text-xl font-bold text-gray-800">Tratamento capilar</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Hidratação simple e profunda, cauterização capilar, reconstrução capilar e cronograma capilar.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-purple-600 font-bold">A partir de R$ 250</span>
+                            <a href="#booking" class="text-purple-600 hover:text-purple-700 font-medium"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-purple-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
+                    <div class="relative">
+                        <div style="position: relative; width: 100%; height: 0; padding-top: 100.0000%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https://www.canva.com/design/DAGm4faESII/URibpUOliu-AE2kswOzbXA/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<br>
+<br> </br>
+<br> </br>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGm4faESII&#x2F;URibpUOliu-AE2kswOzbXA&#x2F;view?utm_content=DAGm4faESII&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a>
+        
+                    </div>
+                </div>
+                </br>
+                <div class="lg:w-1/2">
+                    <h2 class="title-font text-3xl md:text-4xl font-bold text-gray-800 mb-6">Sobre a <span class="text-purple-600">Lumina</span> Estética</h2>
+                    <p class="text-gray-600 mb-6">Fundada em 2023, a Lumina Estética nasceu da paixão por cuidar da beleza natural de cada pessoa. Acreditamos que cada indivíduo possui uma luz interior única, e nosso trabalho é ajudar essa luz a brilhar ainda mais.</p>
+                    
+                    <div class="mb-8">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-purple-100 p-2 rounded-full mr-4 mt-1">
+                                <i class="fas fa-check text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Profissionais Qualificados</h4>
+                                <p class="text-gray-600">Nossa equipe é composta por especialistas certificados e em constante atualização.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start mb-4">
+                            <div class="bg-purple-100 p-2 rounded-full mr-4 mt-1">
+                                <i class="fas fa-check text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Produtos Premium</h4>
+                                <p class="text-gray-600">Utilizamos apenas marcas reconhecidas e testadas dermatologicamente.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 p-2 rounded-full mr-4 mt-1">
+                                <i class="fas fa-check text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Ambiente Acolhedor</h4>
+                                <p class="text-gray-600">Nosso espaço foi cuidadosamente projetado para seu conforto e relaxamento.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-4">
+                        <div class="bg-white p-4 rounded-lg shadow-sm flex-1 min-w-[200px]">
+                            <h3 class="title-font text-2xl font-bold text-purple-600 mb-2">+2.500</h3>
+                            <p class="text-gray-600">Clientes satisfeitos</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm flex-1 min-w-[200px]">
+                            <h3 class="title-font text-2xl font-bold text-purple-600 mb-2">100%</h3>
+                            <p class="text-gray-600">Higienização garantida</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="title-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">O Que Nossos <span class="text-purple-600">Clientes</span> Dizem</h2>
+                <p class="max-w-2xl mx-auto text-gray-600">A satisfação dos nossos clientes é nossa maior recompensa.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Cliente" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Ana Carolina</h4>
+                            <div class="flex text-purple-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"A limpeza de pele na Lumina mudou minha vida! Minha pele nunca esteve tão saudável. As profissionais são extremamente atenciosas e o ambiente é super aconchegante."</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Cliente" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Juliana Santos</h4>
+                            <div class="flex text-purple-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Fiz depilação a laser e os resultados foram incríveis! Poucas sessões e já notei uma diferença enorme. A equipe é muito profissional e o atendimento é personalizado."</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Cliente" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Ricardo Almeida</h4>
+                            <div class="flex text-purple-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Como homem, nunca tinha frequentado uma estética antes. A Lumina me surpreendeu pelo profissionalismo e pelo ambiente descontraído. As massagens são perfeitas para aliviar o estresse do trabalho."</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+           
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="py-20 bg-gray-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
+                    <h2 class="title-font text-3xl md:text-4xl font-bold mb-6">Agende Seu <span class="text-purple-300">Horário</span></h2>
+                    <p class="text-gray-300 mb-8">Preencha o formulário ao lado e nossa equipe entrará em contato para confirmar seu agendamento.</p>
+                    
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="bg-gray-800 p-6 rounded-lg">
+                            <i class="fas fa-phone-alt text-purple-400 text-2xl mb-3"></i>
+                            <h4 class="font-bold mb-2">Telefone</h4>
+                            <p class="text-gray-300">(85) 99999-9999</p>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-lg">
+                            <i class="fas fa-envelope text-purple-400 text-2xl mb-3"></i>
+                            <h4 class="font-bold mb-2">Email</h4>
+                            <p class="text-gray-300">contato@luminaestetica.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-800 p-6 rounded-lg">
+                        <h4 class="font-bold mb-4 text-lg">Horário de Funcionamento</h4>
+                        <div class="space-y-2">
+                            <div class="flex justify-between border-b border-gray-700 pb-2">
+                                <span class="text-gray-300">Segunda a Sexta</span>
+                                <span class="font-medium">09:00 - 19:00</span>
+                            </div>
+                            <div class="flex justify-between border-b border-gray-700 pb-2">
+                                <span class="text-gray-300">Sábado</span>
+                                <span class="font-medium">09:00 - 15:00</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-300">Domingo</span>
+                                <span class="font-medium">Fechado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="booking-form p-8 rounded-xl shadow-lg">
+                        <h3 class="title-font text-2xl font-bold text-gray-800 mb-6">Formulário de Agendamento</h3>
+                        <form id="bookingForm" class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Nome Completo</label>
+                                <input type="text" placeholder="Nome completo"  id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 text-black" required>
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                                <input type="email" placeholder="ex: usuario@gmail.com" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 text-black" required>
+                            </div>
+                            
+                            <div>
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Telefone</label>
+                                <input type="tel" placeholder="(xx)xxxxx-xxxx"  id="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 text-black" required>
+                            </div>
+                            
+                            <div>
+                                <label for="service" class="block text-gray-700 font-medium mb-2">Serviço Desejado</label>
+                                <select id="service" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 text-black" required>
+                                    <option value="">Selecione um serviço</option>
+                                    <option value="Tratamento Facial">Tratamento Facial</option>
+                                    <option value="Massagem Relaxante">Massagem Relaxante</option>
+                                    <option value="Depilação a Laser">Depilação a Laser</option>
+                                    <option value="Terapias Naturais">Tratamento capilar</option>
+                                    <option value="Manicure & Pedicure">Manicure & Pedicure</option>
+                                    <option value="Redução de Medidas">spa</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label for="date" class="block text-gray-700 font-medium mb-2">Data Preferencial</label>
+                                <input type="date" id="date" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 text-black" required>
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Mensagem (Opcional)</label>
+                                <textarea id="message" rows="3" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 text-black "></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300">Enviar Agendamento</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="title-font text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nosso <span class="text-purple-600">Espaço</span></h2>
+                <p class="max-w-2xl mx-auto text-gray-600">Venha nos visitar e vivenciar uma experiência única de beleza e bem-estar.</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row">
+                <div class="lg:w-1/2 mb-8 lg:mb-0 lg:pr-8">
+                    <div class="h-96 w-full rounded-xl overflow-hidden shadow-lg">
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15915.926936372247!2d-38.738280202566756!3d-4.223822531999924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7bf35f9910cd685%3A0x45ac94eb11aa196a!2zUmVkZW7Dp8OjbywgQ0UsIDYyNzkwLTAwMA!5e0!3m2!1spt-BR!2sbr!4v1749322108777!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-sm">
+                        <h3 class="title-font text-2xl font-bold text-gray-800 mb-6">Informações de <span class="text-purple-600">Contato</span></h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Endereço</h4>
+                                    <p class="text-gray-600">R. Mar. Deodoro - Redenção - CE</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone-alt text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Telefone</h4>
+                                    <p class="text-gray-600">(85) 99999-9999</p>
+                                    <p class="text-gray-600">(85) 98888-8888</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Email</h4>
+                                    <p class="text-gray-600">contato@luminaestetica.com</p>
+                                    <p class="text-gray-600">agendamento@luminaestetica.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-clock text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Horário de Funcionamento</h4>
+                                    <p class="text-gray-600">Segunda a Sexta: 09:00 - 19:00</p>
+                                    <p class="text-gray-600">Sábado: 09:00 - 15:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-bold text-gray-800 mb-4">Siga-nos nas Redes Sociais</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://www.instagram.com/lumina.by_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="bg-purple-100 hover:bg-purple-200 p-3 rounded-full text-purple-600 transition duration-300">
+                                    <i class="fab fa-instagram text-xl"></i>
+                                </a>
+                                <a href="https://www.facebook.com/profile.php?id=61577178451720" class="bg-purple-100 hover:bg-purple-200 p-3 rounded-full text-purple-600 transition duration-300">
+                                    <i class="fab fa-facebook-f text-xl"></i>
+                                </a>
+                                <a href="#" class="bg-purple-100 hover:bg-purple-200 p-3 rounded-full text-purple-600 transition duration-300">
+                                    <i class="fab fa-whatsapp text-xl"></i>
+                                </a>
+                                <a href="#" class="bg-purple-100 hover:bg-purple-200 p-3 rounded-full text-purple-600 transition duration-300">
+                                    <i class="fab fa-tiktok text-xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-12 bg-purple-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="title-font text-2xl md:text-3xl font-bold text-gray-800 mb-4">Receba Nossas <span class="text-purple-600">Ofertas</span></h2>
+            <p class="max-w-2xl mx-auto text-gray-600 mb-8">Assine nossa newsletter e seja o primeiro a saber sobre promoções exclusivas e novidades.</p>
+            
+            <form class="max-w-md mx-auto flex">
+                <input type="email" placeholder="Seu email" class="flex-1 px-4 py-3 rounded-l-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                <button type="submit" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-r-lg font-medium transition duration-300">Assinar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                     
+                        <h3 class="title-font text-2xl font-bold">Lumina <span class="text-purple-400">Estética</span></h3>
+                    </div>
+                    <p class="text-gray-400">Cuidando da sua beleza e bem-estar com técnicas avançadas e produtos de qualidade.</p>
+                </div>
+                
+                <div>
+                    <h4 class="title-font text-lg font-bold mb-4">Links Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-purple-400 transition duration-300">Home</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-purple-400 transition duration-300">Serviços</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-purple-400 transition duration-300">Sobre Nós</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-purple-400 transition duration-300">Depoimentos</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-purple-400 transition duration-300">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="title-font text-lg font-bold mb-4">Serviços</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#tratamentos faciais" class="text-gray-400 hover:text-purple-400 transition duration-300">Tratamentos faciais</a></li>
+                        <li><a href="#tratamentos corporais" class="text-gray-400 hover:text-purple-400 transition duration-300">Tratamentos corporais</a></li>
+                        <li><a href="#depilação a laser" class="text-gray-400 hover:text-purple-400 transition duration-300">Depilação a laser</a></li>
+                        <li><a href="#spa" class="text-gray-400 hover:text-purple-400 transition duration-300">Spa</a></li>
+                        <li><a href="#manicure & pedicure" class="text-gray-400 hover:text-purple-400 transition duration-300">Manicure & pedicure</a></li>
+                        <li><a href="#tratamento capilar" class="text-gray-400 hover:text-purple-400 transition duration-300">Tratamento capilar</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="title-font text-lg font-bold mb-4">Contato</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-purple-400"></i>
+                            <span>R. Mar. Deodoro - Redenção - CE</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-3 text-purple-400"></i>
+                            <span>(85) 99999-9999</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3 text-purple-400"></i>
+                            <span>contato@luminaestetica.com</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="mt-4 flex space-x-4">
+                        <a href="https://www.instagram.com/lumina.by_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="bg-gray-800 hover:bg-gray-700 p-2 rounded-full text-purple-400 transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61577178451720" class="bg-gray-800 hover:bg-gray-700 p-2 rounded-full text-purple-400 transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-gray-700 p-2 rounded-full text-purple-400 transition duration-300">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 202 Lumina Estética. Todos os direitos reservados.</p>
+                <p class="mt-2">Desenvolvido com <i class="fas fa-heart text-purple-400"></i> para realçar sua beleza</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-purple-600 hover:bg-purple-700 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth Scrolling for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+        
+        // Back to Top Button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Form Submission
+        const bookingForm = document.getElementById('bookingForm');
+        
+        bookingForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const service = document.getElementById('service').value;
+            const date = document.getElementById('date').value;
+            const message = document.getElementById('message').value;
+            
+            // Here you would typically send this data to a server
+            // For this example, we'll just show an alert
+           
+            
+            // Reset form
+            bookingForm.reset();
+            
+            // Scroll to top
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Current year for footer
+        document.querySelector('footer .border-t p:first-child').innerHTML = ```&copy; ${new Date().getFullYear()} Lumina Estética. Todos os direitos reservados.```;
+    </script>
+</body>
+</html>
